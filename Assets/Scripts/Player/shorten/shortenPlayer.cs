@@ -7,11 +7,6 @@ public class shortenPlayer : MonoBehaviour
     public bool isShort = false;
     public GameObject body;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
 
     // Update is called once per frame
     void Update()
@@ -27,11 +22,6 @@ public class shortenPlayer : MonoBehaviour
             {
                 isShort = true;
                 Instantiate(body, transform.position, transform.rotation);
-            }
-
-            if (isShort == true)
-            {
-                
             }
         }
     }
