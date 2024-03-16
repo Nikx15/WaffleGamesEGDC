@@ -9,6 +9,7 @@ public class TimerScript : MonoBehaviour
 
     public float TimeLeft;
     public bool TimerOn = false;
+    public GameObject lose;
 
     public TextMeshProUGUI TimerTxt;
 
@@ -27,6 +28,7 @@ public class TimerScript : MonoBehaviour
             {
                 TimeLeft -= Time.deltaTime;
                 updateTimer(TimeLeft);
+                lose.SetActive(false);
             }
             else
             {
@@ -34,6 +36,9 @@ public class TimerScript : MonoBehaviour
                 // game over screen/restart
                 TimeLeft = 0;
                 TimerOn = false;
+                Time.timeScale = 0f;
+                lose.SetActive(true);
+                //restart button
             }
         }
     }
