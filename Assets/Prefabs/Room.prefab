@@ -98,8 +98,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1431926820122991671}
-  - component: {fileID: 1431926820122991669}
   - component: {fileID: 1431926820122991666}
+  - component: {fileID: 1431926820122991669}
   m_Layer: 0
   m_Name: Room
   m_TagString: Untagged
@@ -123,19 +123,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1431926820122991669
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1431926820122991670}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d049103f344d4843b0ea62117112e39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  virtualCam: {fileID: 1431926819687922095}
 --- !u!60 &1431926820122991666
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -165,6 +152,19 @@ PolygonCollider2D:
       - {x: -10.286735, y: 8.071836}
       - {x: -10.380099, y: -6.694553}
       - {x: 16.113424, y: -6.5930786}
+--- !u!114 &1431926820122991669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1431926820122991670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d049103f344d4843b0ea62117112e39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  virtualCam: {fileID: 1431926819687922095}
 --- !u!1 &1431926820569812220
 GameObject:
   m_ObjectHideFlags: 0
