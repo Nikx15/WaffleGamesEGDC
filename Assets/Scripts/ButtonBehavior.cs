@@ -20,7 +20,8 @@ public class ButtonBehavior : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        /*if (other.gameObject.CompareTag("Bullet" "Player"))
+        if (other.gameObject.CompareTag("Bullet"))
+        main
         {
             door.SetActive(false);
         }
