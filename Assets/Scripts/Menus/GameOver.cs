@@ -19,10 +19,8 @@ public class GameOver : MonoBehaviour
         
     }
 
-    //GameOver when
-    //Player loses all hp
-    //Timer runs out
-    //(is that all?? ask matthew)
+    //WHEN PLAYER GETS HIT OR YOU ARE SEEN BY THE CROW
+    //EXPLODE ANIMATION FOR THIS
 
     public void GameOverOn()
     {

@@ -10943,7 +10943,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameOver: {fileID: 1331637951}
-  TimeLeft: 5
+  TimeLeft: 300
   TimerOn: 0
   TimerTxt: {fileID: 1115661189}
 --- !u!114 &1550096274
