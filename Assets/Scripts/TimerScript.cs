@@ -6,6 +6,7 @@ using TMPro;
 
 public class TimerScript : MonoBehaviour
 {
+    public GameOver GameOver;
 
     public float TimeLeft;
     public bool TimerOn = false;
@@ -33,6 +34,7 @@ public class TimerScript : MonoBehaviour
             else
             {
                 Debug.Log("Time is UP!");
+                GameOver.GameOverOn();
                 // game over screen/restart
                 TimeLeft = 0;
                 TimerOn = false;
