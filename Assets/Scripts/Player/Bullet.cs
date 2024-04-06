@@ -10,7 +10,7 @@ public class Bullet : MonoBehaviour
         if (other.CompareTag("Box"))
         {
             Box box = other.GetComponent<Box>();
-            if (box != null);
+            if (box != null)
             {
                 Debug.Log("FUCK YOU");
                 box.Explode();
