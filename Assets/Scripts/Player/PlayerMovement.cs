@@ -23,9 +23,9 @@ public class PlayerMovement : MonoBehaviour
     {
         Move();
 
-        Vector2 aimDirection = mousePosition - rb.position;
-        float aimAngle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg - 90f;
-        rb.rotation = aimAngle;
+        //Vector2 aimDirection = mousePosition - rb.position;
+        //float aimAngle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg - 90f;
+        //rb.rotation = aimAngle;
 
     }
 
@@ -36,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
 
 
         moveDirection = new Vector2(moveX, moveY).normalized;
-        mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        //mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
     }
 
     void Move()
