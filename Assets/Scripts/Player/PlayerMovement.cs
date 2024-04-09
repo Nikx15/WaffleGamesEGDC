@@ -5,23 +5,32 @@ using UnityEngine.EventSystems;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed;
+    public float moveSpeed = 5f;
+
     public Rigidbody2D rb;
-    private Vector2 moveDirection;
-    public Weapon weapon;
-    Vector2 mousePosition;
+
+    Vector2 movement;
+
+    //public Weapon weapon;
+    //Vector2 mousePosition;
 
 
     // Update is called once per frame
     void Update()
     {
-        ProcessInputs();
+        //ProcessInputs();
+
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
 
     }
 
     void FixedUpdate()
     {
-        Move();
+
+        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+
+        //Move();
 
         //Vector2 aimDirection = mousePosition - rb.position;
         //float aimAngle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg - 90f;
@@ -29,6 +38,7 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
+    /*
     void ProcessInputs()
     {
         float moveX = Input.GetAxisRaw("Horizontal");
@@ -42,5 +52,5 @@ public class PlayerMovement : MonoBehaviour
     void Move()
     {
         rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
-    }
+    }*/
 }

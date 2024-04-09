@@ -7456,6 +7456,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8186971317587998748, guid: 44401c44ce35b104994bc8bda170d8c8, type: 3}
   m_PrefabInstance: {fileID: 245877559}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1047951317 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8560915523959687250, guid: 550e6d624ecc31e45b089c521ea41a65, type: 3}
+  m_PrefabInstance: {fileID: 8560915524824051525}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1061458204
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11114,6 +11119,26 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8560915523959687257, guid: 550e6d624ecc31e45b089c521ea41a65, type: 3}
   m_PrefabInstance: {fileID: 8560915524824051525}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1560094497
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047951317}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 59aa44d2d22dc6f4e991206484960a45, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!4 &1564104992 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2492478898702957969, guid: 8ad5a6c4c216f5a4ea4df4e63fbccc72, type: 3}
@@ -15353,6 +15378,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Weapon
       objectReference: {fileID: 0}
+    - target: {fileID: 8560915523956788948, guid: 550e6d624ecc31e45b089c521ea41a65, type: 3}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560915523956788948, guid: 550e6d624ecc31e45b089c521ea41a65, type: 3}
+      propertyPath: weapon
+      value: 
+      objectReference: {fileID: 1557258641}
     - target: {fileID: 8560915523959687250, guid: 550e6d624ecc31e45b089c521ea41a65, type: 3}
       propertyPath: m_Name
       value: Player
@@ -15412,6 +15445,10 @@ PrefabInstance:
     - target: {fileID: 8560915523959687257, guid: 550e6d624ecc31e45b089c521ea41a65, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560915523959687260, guid: 550e6d624ecc31e45b089c521ea41a65, type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8560915523959687261, guid: 550e6d624ecc31e45b089c521ea41a65, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
