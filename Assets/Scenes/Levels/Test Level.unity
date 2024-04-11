@@ -15451,6 +15451,14 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8560915523959687261, guid: 550e6d624ecc31e45b089c521ea41a65, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 2.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560915523959687261, guid: 550e6d624ecc31e45b089c521ea41a65, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 5.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560915523959687261, guid: 550e6d624ecc31e45b089c521ea41a65, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 2.56
       objectReference: {fileID: 0}
@@ -15478,6 +15486,10 @@ PrefabInstance:
       propertyPath: weapon
       value: 
       objectReference: {fileID: 1557258641}
+    - target: {fileID: 8560915523959687263, guid: 550e6d624ecc31e45b089c521ea41a65, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1560094497}
     - target: {fileID: 8560915523959687263, guid: 550e6d624ecc31e45b089c521ea41a65, type: 3}
       propertyPath: moveSpeed
       value: 6
