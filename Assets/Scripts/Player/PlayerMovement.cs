@@ -5,30 +5,45 @@ using UnityEngine.EventSystems;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed;
+    public float moveSpeed = 5f;
+
     public Rigidbody2D rb;
-    private Vector2 moveDirection;
-    public Weapon weapon;
-    Vector2 mousePosition;
+    public Animator animator;
+
+    Vector2 movement;
+
+    //public Weapon weapon;
+    //Vector2 mousePosition;
 
 
     // Update is called once per frame
     void Update()
     {
-        ProcessInputs();
+        //ProcessInputs();
+
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
+
+        animator.SetFloat("Horizontal", movement.x);
+        animator.SetFloat("Vertical", movement.y);
+        animator.SetFloat("Speed", movement.sqrMagnitude);
 
     }
 
     void FixedUpdate()
     {
-        Move();
 
-        Vector2 aimDirection = mousePosition - rb.position;
-        float aimAngle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg - 90f;
-        rb.rotation = aimAngle;
+        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+
+        //Move();
+
+        //Vector2 aimDirection = mousePosition - rb.position;
+        //float aimAngle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg - 90f;
+        //rb.rotation = aimAngle;
 
     }
 
+    /*
     void ProcessInputs()
     {
         float moveX = Input.GetAxisRaw("Horizontal");
@@ -36,11 +51,11 @@ public class PlayerMovement : MonoBehaviour
 
 
         moveDirection = new Vector2(moveX, moveY).normalized;
-        mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        //mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
     }
 
     void Move()
     {
         rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
-    }
+    }*/
 }
