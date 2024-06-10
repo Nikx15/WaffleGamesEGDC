@@ -8809,6 +8809,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2492478898702957969, guid: 8ad5a6c4c216f5a4ea4df4e63fbccc72, type: 3}
   m_PrefabInstance: {fileID: 1036238313}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1041724465 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8508945725849657556, guid: 6d63da8ef295a0645905e32e538ad649, type: 3}
+  m_PrefabInstance: {fileID: 1684315111}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1045782344
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11722,6 +11727,26 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8508945725849657567, guid: 6d63da8ef295a0645905e32e538ad649, type: 3}
   m_PrefabInstance: {fileID: 1684315111}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1289722536
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1041724465}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 59aa44d2d22dc6f4e991206484960a45, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1001 &1298195880
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15761,6 +15786,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Robot
       objectReference: {fileID: 0}
+    - target: {fileID: 8508945725849657561, guid: 6d63da8ef295a0645905e32e538ad649, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1289722536}
     - target: {fileID: 8508945725849657562, guid: 6d63da8ef295a0645905e32e538ad649, type: 3}
       propertyPath: m_Constraints
       value: 4
