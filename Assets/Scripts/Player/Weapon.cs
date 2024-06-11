@@ -10,7 +10,7 @@ public class Weapon : MonoBehaviour
     public Transform firePoint;
     public float fireForce = 20f;
 
-    public Rigidbody2D rb;
+    //public Rigidbody2D rb;
     private Vector2 moveDirection;
     public Weapon weapon;
     Vector2 mousePosition;
@@ -27,9 +27,10 @@ public class Weapon : MonoBehaviour
 
         //change Fire() to update? should work completely fine because its triggered by a button
 
-        ProcessInputs();
+        //ProcessInputs();
     }
 
+    /*
     void FixedUpdate()
     {
         Vector2 aimDirection = mousePosition - rb.position;
@@ -40,5 +41,5 @@ public class Weapon : MonoBehaviour
     void ProcessInputs()
     {
         mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-    }
+    }*/
 }
