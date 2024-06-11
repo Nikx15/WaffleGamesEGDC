@@ -13002,6 +13002,22 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 8508945725849657563, guid: 6d63da8ef295a0645905e32e538ad649, type: 3}
+      propertyPath: m_Size.x
+      value: 1.2889764
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508945725849657563, guid: 6d63da8ef295a0645905e32e538ad649, type: 3}
+      propertyPath: m_Size.y
+      value: 3.0641155
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508945725849657563, guid: 6d63da8ef295a0645905e32e538ad649, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.020641297
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508945725849657563, guid: 6d63da8ef295a0645905e32e538ad649, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.72244
+      objectReference: {fileID: 0}
     - target: {fileID: 8508945725849657567, guid: 6d63da8ef295a0645905e32e538ad649, type: 3}
       propertyPath: m_RootOrder
       value: 1
