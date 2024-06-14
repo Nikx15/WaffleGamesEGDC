@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 8508945725849657561}
   - component: {fileID: 8508945725849657562}
   - component: {fileID: 8508945725849657563}
+  - component: {fileID: 7554269983715504749}
   m_Layer: 3
   m_Name: Robot
   m_TagString: Player
@@ -134,7 +135,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 6
   rb: {fileID: 8508945725849657562}
-  weapon: {fileID: 8508945725851444818}
+  animator: {fileID: 0}
 --- !u!50 &8508945725849657562
 Rigidbody2D:
   serializedVersion: 4
@@ -182,6 +183,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!95 &7554269983715504749
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8508945725849657556}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 59aa44d2d22dc6f4e991206484960a45, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &8508945725851444812
 GameObject:
   m_ObjectHideFlags: 0
@@ -282,3 +303,4 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2841581612453287885, guid: 2850a93cfbc12e94883dad857af10ef6, type: 3}
   firePoint: {fileID: 8508945725262806739}
   fireForce: 20
+  weapon: {fileID: 0}
