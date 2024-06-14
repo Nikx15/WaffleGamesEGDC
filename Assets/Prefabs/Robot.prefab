@@ -23,13 +23,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8508945725262806732}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.972, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.940836, z: 0}
+  m_LocalScale: {x: 4.73281, y: 4.6392345, z: 6.2379146}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 8508945725849657567}
-  m_RootOrder: 1
+  m_Father: {fileID: 8508945725851444819}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8508945725849657556
 GameObject:
@@ -65,7 +65,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8508945725851444819}
-  - {fileID: 8508945725262806739}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -136,6 +135,8 @@ MonoBehaviour:
   moveSpeed: 6
   rb: {fileID: 8508945725849657562}
   animator: {fileID: 0}
+  rb2: {fileID: 0}
+  weapon: {fileID: 0}
 --- !u!50 &8508945725849657562
 Rigidbody2D:
   serializedVersion: 4
@@ -232,7 +233,8 @@ Transform:
   m_LocalPosition: {x: -0, y: 0.7692, z: 0}
   m_LocalScale: {x: 0.21129097, y: 0.21555282, z: 0.16031}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 8508945725262806739}
   m_Father: {fileID: 8508945725849657567}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -303,4 +305,5 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2841581612453287885, guid: 2850a93cfbc12e94883dad857af10ef6, type: 3}
   firePoint: {fileID: 8508945725262806739}
   fireForce: 20
+  rb: {fileID: 0}
   weapon: {fileID: 0}

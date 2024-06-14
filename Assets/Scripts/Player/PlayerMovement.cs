@@ -12,8 +12,10 @@ public class PlayerMovement : MonoBehaviour
 
     Vector2 movement;
 
-    //public Weapon weapon;
-    //Vector2 mousePosition;
+    public Rigidbody2D rb2; //references the gun
+    public Weapon weapon;
+    Vector2 mousePosition;
+    Vector2 moveDirection;
 
 
     // Update is called once per frame
@@ -35,15 +37,16 @@ public class PlayerMovement : MonoBehaviour
 
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
 
-        //Move();
+        //everything here and below is the mouse directed shooting mechanic
+        Move();
 
-        //Vector2 aimDirection = mousePosition - rb.position;
-        //float aimAngle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg - 90f;
-        //rb.rotation = aimAngle;
+        Vector2 aimDirection = mousePosition - rb2.position;
+        float aimAngle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg - 90f;
+        rb.rotation = aimAngle;
 
     }
 
-    /*
+    
     void ProcessInputs()
     {
         float moveX = Input.GetAxisRaw("Horizontal");
@@ -51,11 +54,11 @@ public class PlayerMovement : MonoBehaviour
 
 
         moveDirection = new Vector2(moveX, moveY).normalized;
-        //mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
     }
 
     void Move()
     {
         rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
-    }*/
+    }
 }

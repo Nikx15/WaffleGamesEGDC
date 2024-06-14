@@ -10,7 +10,7 @@ public class Weapon : MonoBehaviour
     public Transform firePoint;
     public float fireForce = 20f;
 
-    //public Rigidbody2D rb;
+    public Rigidbody2D rb;
     private Vector2 moveDirection;
     public Weapon weapon;
     Vector2 mousePosition;
@@ -25,12 +25,12 @@ public class Weapon : MonoBehaviour
         //GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         //bullet.GetComponent<Rigidbody2D>().AddForce(firePoint.up * fireForce, ForceMode2D.Impulse);
 
-        //change Fire() to update? should work completely fine because its triggered by a button
+        //everything here and below is the mouse directed shooting mechanic
 
-        //ProcessInputs();
+        ProcessInputs();
     }
 
-    /*
+    
     void FixedUpdate()
     {
         Vector2 aimDirection = mousePosition - rb.position;
@@ -41,5 +41,5 @@ public class Weapon : MonoBehaviour
     void ProcessInputs()
     {
         mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-    }*/
+    }
 }
