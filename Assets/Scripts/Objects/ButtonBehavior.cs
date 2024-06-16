@@ -6,6 +6,7 @@ using UnityEngine;
 public class ButtonBehavior : MonoBehaviour
 {
     public GameObject door;
+    public GameObject Bullet;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +19,7 @@ public class ButtonBehavior : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Bullet"))
         {
