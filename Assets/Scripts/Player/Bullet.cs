@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    void Start()
+    {
+        Physics.IgnoreLayerCollision(6, 3);
+    }
 
     public void OnTriggerEnter2D(Collider2D other)
     {
