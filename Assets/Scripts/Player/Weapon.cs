@@ -27,10 +27,10 @@ public class Weapon : MonoBehaviour
 
         //everything here and below is the mouse directed shooting mechanic
 
-        ProcessInputs();
+        //ProcessInputs();
     }
 
-    
+   /* 
     void FixedUpdate()
     {
         Vector2 aimDirection = mousePosition - rb.position;
@@ -41,5 +41,5 @@ public class Weapon : MonoBehaviour
     void ProcessInputs()
     {
         mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-    }
+    }*/
 }
