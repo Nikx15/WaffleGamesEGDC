@@ -17,6 +17,7 @@ public class TimerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         TimerOn = true;
     }
 
@@ -47,7 +48,7 @@ public class TimerScript : MonoBehaviour
 
     void updateTimer(float currentTime)
     {
-        currentTime += 1;
+        //currentTime += 1;
 
         float minutes = Mathf.FloorToInt(currentTime / 60);
         float seconds = Mathf.FloorToInt(currentTime % 60);
