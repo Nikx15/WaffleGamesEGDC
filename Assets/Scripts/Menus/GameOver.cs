@@ -25,12 +25,14 @@ public class GameOver : MonoBehaviour
     public void GameOverOn()
     {
         gameOverUI.SetActive(true);
+        Time.timeScale = 0f;
     }
 
     public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         gameOverUI.SetActive(false);
+        Time.timeScale = 1f;
     }
 
     public void MainMenu()
