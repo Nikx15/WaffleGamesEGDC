@@ -81,7 +81,7 @@ public class PauseMenu : MonoBehaviour
     public void Detonate()
     {
         ResumeGame();
-        //animator.SetBool("Player_explode", true);
+        //animator.SetBool("Player_explosion", true);
         //player movement false
         TimerOn = true;
     }
