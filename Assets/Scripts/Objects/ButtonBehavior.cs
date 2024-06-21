@@ -7,6 +7,8 @@ public class ButtonBehavior : MonoBehaviour
 {
     public GameObject door;
     public GameObject Bullet;
+    public AudioSource source;
+    public AudioClip clip;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +25,7 @@ public class ButtonBehavior : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Bullet"))
         {
+            source.PlayOneShot(clip);
             door.SetActive(false);
         }
         else

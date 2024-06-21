@@ -47,6 +47,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeTime: 2
+  source: {fileID: 0}
+  pop: {fileID: 8300000, guid: 294cba04d0f02954b9698b5b4a326704, type: 3}
 --- !u!212 &3821637999670212833
 SpriteRenderer:
   m_ObjectHideFlags: 0
