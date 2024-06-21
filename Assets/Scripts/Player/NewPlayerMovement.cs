@@ -20,14 +20,17 @@ public class NewPlayerMovement : MonoBehaviour
 
     public float fireDelay;
 
+    public AudioSource source;
+    public AudioClip pew;
+    public AudioClip walk;
+
 
     // Update is called once per frame
     void Update()
     {
         //ProcessInputs();
 
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
+        Move();
 
         float shootHor = Input.GetAxis("ShootHorizontal");
         float shootVert = Input.GetAxis("ShootVertical");
@@ -44,6 +47,14 @@ public class NewPlayerMovement : MonoBehaviour
 
     }
 
+    void Move()
+    {
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
+    }
+
+
+
     void FixedUpdate()
     {
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
@@ -51,6 +62,7 @@ public class NewPlayerMovement : MonoBehaviour
 
     void Shoot(float x, float y)
     {
+        source.PlayOneShot(pew);
         GameObject bullet = Instantiate(bulletPrefab, transform.position, transform.rotation) as GameObject;
         bullet.AddComponent<Rigidbody2D>().gravityScale = 0;
         bullet.GetComponent<Rigidbody2D>().velocity = new Vector3(
