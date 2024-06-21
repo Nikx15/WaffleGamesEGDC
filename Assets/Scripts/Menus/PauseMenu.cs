@@ -22,7 +22,7 @@ public class PauseMenu : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Tab))
         {
             if (GameIsPaused)
             {
@@ -36,7 +36,7 @@ public class PauseMenu : MonoBehaviour
 
         if (TimerOn)
         {
-            animator.SetBool("Player_explode", true);
+            animator.SetBool("Player_explosion", true);
             if (timerExplode > 0)
             {
                 timerExplode -= Time.deltaTime;
