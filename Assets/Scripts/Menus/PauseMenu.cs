@@ -11,6 +11,8 @@ public class PauseMenu : MonoBehaviour
     public float timerExplode = 3;
     public bool TimerOn = false;
 
+    public Animator animator;
+
     void Start()
     {
         pauseMenuUI.SetActive(false);
@@ -78,6 +80,10 @@ public class PauseMenu : MonoBehaviour
     public void Detonate()
     {
         ResumeGame();
+        if (GameIsPaused == false)
+        {
+            animator.SetTrigger("Player_explode");
+        }
         //player movement false
         TimerOn = true;
     }
