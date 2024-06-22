@@ -16622,7 +16622,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!223 &1487741890
 Canvas:
   m_ObjectHideFlags: 0
@@ -24312,7 +24312,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 818747412441288724, guid: 9140d4879f15d4142a1057d537ba20ad, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 992933612076360803, guid: 9140d4879f15d4142a1057d537ba20ad, type: 3}
       propertyPath: winGameUI
@@ -24500,11 +24500,11 @@ PrefabInstance:
       objectReference: {fileID: 1560094497}
     - target: {fileID: 3936543982678693001, guid: 9140d4879f15d4142a1057d537ba20ad, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -29
+      value: -966
       objectReference: {fileID: 0}
     - target: {fileID: 3936543982678693001, guid: 9140d4879f15d4142a1057d537ba20ad, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -120
+      value: -344
       objectReference: {fileID: 0}
     - target: {fileID: 5341109230258046513, guid: 9140d4879f15d4142a1057d537ba20ad, type: 3}
       propertyPath: m_LocalPosition.z
@@ -24532,7 +24532,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6444319852334538499, guid: 9140d4879f15d4142a1057d537ba20ad, type: 3}
       propertyPath: m_UiScaleMode
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6444319852334538499, guid: 9140d4879f15d4142a1057d537ba20ad, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 6444319852334538499, guid: 9140d4879f15d4142a1057d537ba20ad, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
       objectReference: {fileID: 0}
     - target: {fileID: 7131625895012216855, guid: 9140d4879f15d4142a1057d537ba20ad, type: 3}
       propertyPath: m_SizeDelta.x
@@ -24693,6 +24701,18 @@ PrefabInstance:
     - target: {fileID: 8351670622077353500, guid: 9140d4879f15d4142a1057d537ba20ad, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8379745934774247665, guid: 9140d4879f15d4142a1057d537ba20ad, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8379745934774247665, guid: 9140d4879f15d4142a1057d537ba20ad, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 8379745934774247665, guid: 9140d4879f15d4142a1057d537ba20ad, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
       objectReference: {fileID: 0}
     - target: {fileID: 8628738338390719798, guid: 9140d4879f15d4142a1057d537ba20ad, type: 3}
       propertyPath: m_Name
